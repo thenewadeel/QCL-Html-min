@@ -9,212 +9,16 @@
     <script src="./js/aos.js"></script>
     <!-- <link rel="stylesheet" href="./css/tailwind.min.css" /> -->
     <link rel="stylesheet" href="./css/aos.css" />
-    <title>Wittness Tech</title>
+    <title>Quetta Club Ltd</title>
   </head>
   <body
     class="w-screen flex flex-col justify-center bg-gray text-black text-lg"
     x-data="{ showBar: false }"
   >
     <div
-      class="bg-green-600 visible md:invisible w-screen z-20"
+      class="bg-green-600 visible  w-screen z-20"
       x-data="{showMenu : false}"
     >
-      <button
-        @click.prevent="showMenu = !showMenu "
-        class="px-2 py-2 flex justify-between bg-green-600 text-white"
-      >
-        <svg
-          x-show="!showMenu"
-          class="w-6 h-6 mr-2"
-          fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-        <svg
-          x-show="showMenu"
-          class="w-6 h-6 mr-2"
-          fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path d="M6 18L18 6M6 6l12 12"></path>
-        </svg>
-        Menu
-      </button>
-      <div x-show="showMenu">
-        <!-- <button
-          @click.prevent="showMenu = !showMenu "
-          class="
-            px-2
-            py-2
-            font-bold
-            flex
-            justify-between
-            text-blue-900
-            w-full
-            border-b border-blue-900
-            bg-white
-          "
-        >
-          Menu
-          <svg
-            class="w-6 h-6"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path d="M6 18L18 6M6 6l12 12"></path>
-          </svg>
-        </button> -->
-        <nav class="flex flex-col">
-          <a
-            href="#aboutUs"
-            class="
-              p-2
-              text-green-600
-              font-bold
-              bg-white
-              flex
-              justify-between
-              w-full
-              border-b border-blue-900
-              hover:text-white hover:bg-green-600
-            "
-          >
-            About Us
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path d="M9 5l7 7-7 7"></path>
-            </svg>
-          </a>
-          <a
-            href="#services"
-            class="
-              p-2
-              text-green-600
-              font-bold
-              bg-white
-              flex
-              justify-between
-              w-full
-              border-b border-blue-900
-              hover:text-white hover:bg-green-600
-            "
-          >
-            Services
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path d="M9 5l7 7-7 7"></path>
-            </svg>
-          </a>
-          <a
-            href="#process"
-            class="
-              p-2
-              text-green-600
-              font-bold
-              bg-white
-              flex
-              justify-between
-              w-full
-              border-b border-blue-900
-              hover:text-white hover:bg-green-600
-            "
-          >
-            Process
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path d="M9 5l7 7-7 7"></path>
-            </svg>
-          </a>
-          <a
-            href="#caseStudies"
-            class="
-              p-2
-              text-green-600
-              font-bold
-              bg-white
-              flex
-              justify-between
-              w-full
-              border-b border-blue-900
-              hover:text-white hover:bg-green-600
-            "
-          >
-            Case Studies
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path d="M9 5l7 7-7 7"></path>
-            </svg>
-          </a>
-          <a
-            href="#contact"
-            class="
-              p-2
-              text-green-600
-              font-bold
-              bg-white
-              flex
-              justify-between
-              w-full
-              border-b border-blue-900
-              hover:text-white hover:bg-green-600
-            "
-          >
-            Contact us
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path d="M9 5l7 7-7 7"></path>
-            </svg>
-          </a>
-        </nav>
-      </div>
     </div>
     <!-- .bg-blue-500 -->
     <nav
@@ -222,20 +26,18 @@
       @scroll.window="showBar = (window.pageYOffset > 20) ? true : false"
       class="
         z-20
-        invisible
-        md:visible
         w-screen
         py-2
         text-center
         fixed
         top-0
-        bg-gray-200
+        bg-black
         transition-all
         duration-1000
         flex
         items-center
         justify-center
-        text-gray-800 text-xs
+        text-gray-200 text-xs
         font-bold
         text-xl
         uppercase
@@ -244,111 +46,28 @@
       "
     >
       <div class="flex flex-row w-1/6 pl-8">
-        <svg
-          width="64"
-          height="64"
-          viewBox="0 0 16.933333 16.933334"
-          version="1.1"
-          id="svg1114"
-          inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
-          sodipodi:docname="wittness1.svg"
-          xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-          xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:svg="http://www.w3.org/2000/svg"
-        >
-          <defs id="defs1111" />
-          <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1">
-            <g
-              id="g7455"
-              transform="matrix(0.38886891,0,0,0.33252078,2.5922963,6.6588457)"
-            >
-              <path
-                id="path3373"
-                style="
-                  font-variation-settings: normal;
-                  fill: #ff0000;
-                  fill-opacity: 1;
-                  fill-rule: evenodd;
-                  stroke: #000000;
-                  stroke-width: 0.944175;
-                  stroke-linecap: butt;
-                  stroke-linejoin: miter;
-                  stroke-miterlimit: 12.6;
-                  stroke-dasharray: none;
-                  stroke-dashoffset: 0;
-                  stroke-opacity: 0.996059;
-                  paint-order: normal;
-                  stop-color: #000000;
-                "
-                inkscape:transform-center-x="-4.3811044e-06"
-                inkscape:transform-center-y="-7.5409504"
-                d="m 15.10656,-17.037008 c -2.38895,13.363909 -4.77798,26.727804 -7.16752,40.091609 1.22654,-4.287488 3.81653,-8.246541 7.1856,-11.078392 3.35487,2.900669 5.92499,6.783162 7.14892,11.074259 -2.38888,-13.362514 -4.77793,-26.724997 -7.167,-40.087476 z"
-                sodipodi:nodetypes="ccccc"
-              />
-              <path
-                id="path2954"
-                style="
-                  fill: #ffffff44;
-                  fill-opacity: 1;
-                  fill-rule: evenodd;
-                  stroke: #000000;
-                  stroke-width: 0.944175;
-                  stroke-linejoin: miter;
-                  stroke-miterlimit: 11;
-                  stroke-dasharray: none;
-                  stroke-opacity: 0.996059;
-                  paint-order: fill markers stroke;
-                  stop-color: #000000;
-                "
-                inkscape:transform-center-x="1.270063e-05"
-                inkscape:transform-center-y="19.399231"
-                d="m 28.76599,11.98086 c -0.26192,-0.768957 -0.55795,-1.519733 -0.88677,-2.248958 -0.88326,4.11362 -1.76643,8.227171 -2.64945,12.340846 -0.40928,2.200228 -1.70075,6.780581 -1.70075,6.780581 0,0 -1.2913,-4.58006 -1.70062,-6.780616 C 20.94537,17.95904 20.0622,13.845481 19.17894,9.731867 l -0.85782,2.172475 C 18.10713,9.779439 17.6569,7.680438 16.97081,5.665964 16.84233,5.155353 16.59031,4.674235 16.39203,4.183366 l 0.91106,-4.242117 c 8.33957,-2.347036 14.49004,-9.893025 16.23006,-11.923092 z"
-                sodipodi:nodetypes="cccccccccccc"
-              />
-              <path
-                id="path7338"
-                style="
-                  fill: #ffffff44;
-                  fill-opacity: 1;
-                  fill-rule: evenodd;
-                  stroke: #000000;
-                  stroke-width: 0.944175;
-                  stroke-linejoin: miter;
-                  stroke-miterlimit: 11;
-                  stroke-dasharray: none;
-                  stroke-opacity: 0.996059;
-                  paint-order: fill markers stroke;
-                  stop-color: #000000;
-                "
-                inkscape:transform-center-x="-1.0612715e-05"
-                inkscape:transform-center-y="19.399231"
-                d="m 1.44661,11.98086 c 0.26192,-0.768957 0.55795,-1.519733 0.88677,-2.248958 0.88326,4.11362 1.76643,8.227171 2.64945,12.340846 0.40928,2.200228 1.70075,6.780581 1.70075,6.780581 0,0 1.2913,-4.58006 1.70062,-6.780616 0.88303,-4.113673 1.7662,-8.227232 2.64946,-12.340846 l 0.85782,2.172475 C 12.10547,9.779439 12.5557,7.680438 13.24179,5.665964 13.37027,5.155353 13.62229,4.674235 13.82057,4.183366 L 12.90951,-0.058751 C 4.56994,-2.405787 -1.58053,-9.951776 -3.32055,-11.981843 Z"
-                sodipodi:nodetypes="cccccccccccc"
-              />
-            </g>
-          </g>
-        </svg>
+        XXX
+        <img src="img/qcl watermark min.png" class="h-20 w-20"/>
       </div>
-      <div class="flex flex-row w-4\/6">
-        <ul class="flex row pl-6">
+      <div class="flex flex-row w-4\/6 ">
+        <ul class="flex row ">
           <li class="pr-6 hover:text-green-600">
-            <a href="#aboutUs"> About Us </a>
+            <a href="#about"> About </a>
           </li>
           <li class="pr-6 hover:text-green-600">
-            <a href="#services"> Services </a>
+            <a href="#facilities"> Facilities </a>
           </li>
           <li class="pr-6 hover:text-green-600">
-            <a href="#process"> Process </a>
+            <a href="#gallery"> Gallery </a>
           </li>
           <!-- <li class="pr-6 hover:text-green-600">
             <a href="#industries"> Industries </a>
           </li> -->
           <li class="pr-6 hover:text-green-600">
-            <a href="#caseStudies"> Case Studies </a>
+            <a href="#affiliations"> Affiliations </a>
           </li>
           <li class="pr-6 hover:text-green-600">
-            <a href="#contact"> Contact Us </a>
+            <a href="#contact"> Contact </a>
           </li>
         </ul>
       </div>
@@ -377,99 +96,19 @@
           overflow-visible
           md:text-9xl
           font-extrabold
-          text-green-500 text-center
+          text-red-500 text-center
           bg-opacity-70 bg-black
           w-max
           self-center
           rounded-3xl
           p-4
-          font-serif
-          md:hover:text-red-500 md:hover:shadow-2xl
+          font-black
+          md:hover:text-amber-500 md:hover:shadow-2xl
           transition-all
           duration-1000
         "
       >
-        <svg
-          class="md:hidden self-center"
-          width="128"
-          height="128"
-          viewBox="0 0 16 16"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:svg="http://www.w3.org/2000/svg"
-        >
-          <defs id="defs1111" />
-          <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1">
-            <g
-              id="g7455"
-              transform="matrix(0.38886891,0,0,0.33252078,2.5922963,6.6588457)"
-            >
-              <path
-                id="path3373"
-                style="
-                  font-variation-settings: normal;
-                  fill: #ff0000;
-                  fill-opacity: 1;
-                  fill-rule: evenodd;
-                  stroke: #000000;
-                  stroke-width: 0.944175;
-                  stroke-linecap: butt;
-                  stroke-linejoin: miter;
-                  stroke-miterlimit: 12.6;
-                  stroke-dasharray: none;
-                  stroke-dashoffset: 0;
-                  stroke-opacity: 0.996059;
-                  paint-order: normal;
-                  stop-color: #000000;
-                "
-                inkscape:transform-center-x="-4.3811044e-06"
-                inkscape:transform-center-y="-7.5409504"
-                d="m 15.10656,-17.037008 c -2.38895,13.363909 -4.77798,26.727804 -7.16752,40.091609 1.22654,-4.287488 3.81653,-8.246541 7.1856,-11.078392 3.35487,2.900669 5.92499,6.783162 7.14892,11.074259 -2.38888,-13.362514 -4.77793,-26.724997 -7.167,-40.087476 z"
-                sodipodi:nodetypes="ccccc"
-              />
-              <path
-                id="path2954"
-                style="
-                  fill: #ffffff44;
-                  fill-opacity: 1;
-                  fill-rule: evenodd;
-                  stroke: gray;
-                  stroke-width: 0.944175;
-                  stroke-linejoin: miter;
-                  stroke-miterlimit: 11;
-                  stroke-dasharray: none;
-                  stroke-opacity: 0.996059;
-                  paint-order: fill markers stroke;
-                  stop-color: #000000;
-                "
-                inkscape:transform-center-x="1.270063e-05"
-                inkscape:transform-center-y="19.399231"
-                d="m 28.76599,11.98086 c -0.26192,-0.768957 -0.55795,-1.519733 -0.88677,-2.248958 -0.88326,4.11362 -1.76643,8.227171 -2.64945,12.340846 -0.40928,2.200228 -1.70075,6.780581 -1.70075,6.780581 0,0 -1.2913,-4.58006 -1.70062,-6.780616 C 20.94537,17.95904 20.0622,13.845481 19.17894,9.731867 l -0.85782,2.172475 C 18.10713,9.779439 17.6569,7.680438 16.97081,5.665964 16.84233,5.155353 16.59031,4.674235 16.39203,4.183366 l 0.91106,-4.242117 c 8.33957,-2.347036 14.49004,-9.893025 16.23006,-11.923092 z"
-                sodipodi:nodetypes="cccccccccccc"
-              />
-              <path
-                id="path7338"
-                style="
-                  fill: #ffffff44;
-                  fill-opacity: 1;
-                  fill-rule: evenodd;
-                  stroke: gray;
-                  stroke-width: 0.944175;
-                  stroke-linejoin: miter;
-                  stroke-miterlimit: 11;
-                  stroke-dasharray: none;
-                  stroke-opacity: 0.996059;
-                  paint-order: fill markers stroke;
-                  stop-color: #000000;
-                "
-                inkscape:transform-center-x="-1.0612715e-05"
-                inkscape:transform-center-y="19.399231"
-                d="m 1.44661,11.98086 c 0.26192,-0.768957 0.55795,-1.519733 0.88677,-2.248958 0.88326,4.11362 1.76643,8.227171 2.64945,12.340846 0.40928,2.200228 1.70075,6.780581 1.70075,6.780581 0,0 1.2913,-4.58006 1.70062,-6.780616 0.88303,-4.113673 1.7662,-8.227232 2.64946,-12.340846 l 0.85782,2.172475 C 12.10547,9.779439 12.5557,7.680438 13.24179,5.665964 13.37027,5.155353 13.62229,4.674235 13.82057,4.183366 L 12.90951,-0.058751 C 4.56994,-2.405787 -1.58053,-9.951776 -3.32055,-11.981843 Z"
-                sodipodi:nodetypes="cccccccccccc"
-              />
-            </g>
-          </g>
-        </svg>
-        Wittness Tech
+        Quetta Club Ltd
       </h1>
       <!-- <h2 class="pt-8 text-4xl">Software Consultancy</h2> -->
       <p
@@ -477,22 +116,22 @@
           p-4
           text-base
           md:p-8 md:text-3xl
-          bg-opacity-70 bg-black
           rounded-xl
           leading-relaxed
-        "
-      >
-        We’re witnessing the fastest technology transformation in modern
-        history, businesses today can either
-        <span class="text-red-500 font-bold">Catch up or Die!</span>
-        <br />
-        <br />
-        To bridge the technology gap that stands between you and a modern
-        business, our software consultants can help.
+          "
+          >
+          <!-- bg-opacity-70 bg-black -->
+      Exceptional Facilities,
+      <br />
+
+      <br />
+      <span class="text-red-500 font-bold">
+        Exceptional You!
+      </span>
       </p>
     </div>
     <!-- About Us Section -->
-    <div id="aboutUs">
+    <div id="about">
       <!-- STORY PAGE -->
       <div
         class="
@@ -518,7 +157,7 @@
           "
         >
           <div class="text-center text-4xl p-2 pb-8 font-black underline">
-            Our Story
+            About Us
           </div>
           <!-- <div class="flex row"> -->
           <div class="flex w-full h-full p-2 relative md:grid grid-cols-2">
@@ -557,13 +196,36 @@
                 md:indent-16
               "
             >
-              Wittness was born when two brothers of a suburban town of Pakistan
-              recognised their interest in computers. Their thirst for knowledge
-              and curiosity made them tech engineers and problem solvers.
-              <br />Gaining fulfillment by extending help, they set out to help
-              surrounding individuals and organisations. <br />Today Wittness is
-              proudly helping organisations in forming the technical stack
-              tailored for their unique business needs.
+              
+            Welcome to Quetta Club, where tradition, elegance, and distinction converge to
+create an unparalleled sanctuary for the discerning elite. Founded in [Year], our
+storied history reflects a commitment to crafting a haven that transcends the
+ordinary—a place where opulence meets open spaces, and every moment is
+steeped in timeless sophistication.
+
+<br>
+Established in [Year], Quetta Golf Club and Gym Khana stands as a
+testament to a rich legacy of distinction and timeless elegance. Born
+from a vision to create a haven for the elite class, our journey began
+with a commitment to redefine the standard of luxury and leisure in
+[Location].
+<br>
+
+
+In the early years, our founders envisioned a space that transcended
+the ordinary—a place where refined individuals could come together to
+indulge in sophisticated pursuits. The first swing on our historic golf
+course marked the inception of a legacy that would blend opulence
+with open spaces, creating an environment where prestige met
+recreation.
+
+<br>
+
+As the years unfolded, the club evolved, weaving itself into the fabric of
+the community and becoming a symbol of exclusivity. From the
+introduction of state-of-the-art gymnasium facilities to the hosting of
+prestigious events, every chapter of our history has been marked by an
+unwavering commitment to exceptional experiences.
             </div>
           </div>
           <!-- </div> -->
@@ -708,8 +370,7 @@
                   >
                     <path
                       d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z"
-                    /></svg
-                ></a>
+                    /></svg></a>
               </div>
             </div>
             <!-- Design Advisor -->
@@ -742,9 +403,7 @@
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z"
-                    /></svg
-                ></a>
+                      d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z"/></svg></a>
               </div>
             </div>
             <!-- Tech Lead -->
@@ -795,9 +454,9 @@
         </div>
       </div>
     </div>
-    <!-- Services Section -->
+    <!-- facilities Section -->
     <div
-      id="services"
+      id="facilities"
       class="
         h-full
         p-2
@@ -820,7 +479,7 @@
           worked on numerous tech stacks in various business domains, resulting in
           customer satisafaction. Our team can consult with your business for as
           little or as long as you need and give support as required. Our key
-          services include Design & Deployment on the following :
+          facilities include Design & Deployment on the following :
          </p>
         <ul
           class="flex flex-col text-base leading-5 indent-4"
@@ -833,7 +492,7 @@
             <span class="px-2">O</span> Distributed Web based infrastructure
           </li>
           <li class="md:py-2"><span class="px-2">O</span> On site solutions</li>
-          <li class="md:py-2"><span class="px-2">O</span> Cloud services</li>
+          <li class="md:py-2"><span class="px-2">O</span> Cloud facilities</li>
           <li class="md:py-2">
             <span class="px-2">O</span> Windows/ Android/ Mac/ iOS and Linux
             based stand-alone business Applications
@@ -844,9 +503,9 @@
         </ul>
       </div>
     </div>
-    <!-- Process Section -->
+    <!-- gallery Section -->
     <div
-      id="process"
+      id="gallery"
       class="
         h-full
         p-2
@@ -997,7 +656,7 @@
     </div>
     <!-- Work Examples Section -->
     <div
-      id="caseStudies"
+      id="affiliations"
       class="
         h-full
         p-2
@@ -1152,7 +811,7 @@
           </div>
           <div class="p-2 text-base text-justify">
             Our solution can help in managing booking operations of hotels as
-            well as providing additional services to customers.
+            well as providing additional facilities to customers.
           </div>
           <button
             class="
@@ -1447,8 +1106,7 @@
                   >
                     <path
                       d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
-                    /></svg
-                ></a>
+                    /></svg                ></a>
               </li>
               <li>
                 <a href="">
